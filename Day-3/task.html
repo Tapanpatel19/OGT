@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .container {
+      max-width: 80%;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-size: medium;
+    }
+
+    #nav {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      padding: 10px;
+    }
+
+    li > a {
+      text-decoration: none;
+      /* justify-content: space-between; */
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: large;
+    }
+  </style>
+  <body style="scroll-behavior: smooth">
+    <div class="container">
+      <hr />
+      <nav>
+        <div>
+          <p>TAJ</p>
+        </div>
+        <div id="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </nav>
+      <hr />
+      <div style="display: flex">
+        <div style="height: 30%">
+          <img src="/assests/hotel.jpg" alt="" />
+        </div>
+        <div
+          style="
+            color: white;
+            height: 30px;
+            font-size: x-large;
+            text-align: center;
+            margin-top: 10rem;
+          "
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            cupiditate consectetur dicta labore repellat voluptate dolore earum
+            non rerum accusantium illo numquam, odio vero ullam odit dolorem,
+            quibusdam quae ipsa officia. Sapiente ullam unde modi rem autem iure
+            commodi velit quae porro non consequatur molestias esse, amet
+            perspiciatis minus error!
+          </p>
+          <h2>Timing : 7AM TO 12PM</h2>
+          <label for="Contact">Contact us :</label>
+          <a href="skype:079 4040 0000">079 4040 0000</a>
+        </div>
+      </div>
+
+      <section id="service" class="Services" style="margin-top: 9rem">
+        <div class="services-2">
+          <hr />
+          <h2 style="color: white">Services</h2>
+          <hr />
+          <div style="margin: 5rem; display: flex">
+            <div
+              style="
+                border: 3px white double;
+                font-size: x-large;
+                text-align: center;
+              "
+            >
+              <img
+                src="/assests/thali_20180831100518.jpg"
+                alt=""
+                style="height: 400px; border-radius: 50%"
+              />
+              <h3 style="color: white">Gujarati Thali</h3>
+              <p></p>
+            </div>
+            <div
+              style="
+                border: 3px white double;
+                margin-left: 10rem;
+                font-size: x-large;
+                text-align: center;
+              "
+            >
+              <img
+                src="/assests/food-2.jpg"
+                alt=""
+                style="height: 400px; border-radius: 10%"
+              />
+              <h3 style="color: white">Punjabi Thali</h3>
+            </div>
+          </div>
+          <div style="display: flex; font-size: x-large; text-align: center">
+            <div style="border: 3px white double">
+              <img
+                src="/assests/food-3.jpg"
+                alt=""
+                style="height: 400px; border-radius: 10%"
+              />
+              <h3 style="color: white">South Indian</h3>
+            </div>
+            <div
+              style="
+                border: 3px white double;
+                margin-left: 10rem;
+                font-size: x-large;
+                text-align: center;
+              "
+            >
+              <img
+                src="/assests/food-4.jpg"
+                alt=""
+                style="height: 400px; border-radius: 10%"
+              />
+              <h3 style="color: white">Fast Food</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="Contact" style="margin-top: 9rem">
+        <div style="color: white; font-size: x-large; text-align: center">
+          <hr />
+          <h3>Contact Us</h3>
+          <hr />
+          <div style="display: flex; margin-top: 4rem">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4664367966575!2d72.4797155149682!3d23.04335518494252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b6318e8da91%3A0x864bb42461cc953f!2sTaj%20Skyline%2C%20Ahmedabad!5e0!3m2!1sen!2sin!4v1687335683039!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>
+              Address : Taj Skyline Ahmedabad, Sankalp Square III, Opp. Saket 3,
+              Sindhubhavan Road, nr. Neelkanth Green, Shilaj, Gujarat 380059
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Popup container -->
+  <div id="popupContainer">
+    <div id="popupContent">
+      <h2>Welcome to our Restaurant!</h2>
+      <h4 style="color: darkblue; margin: 1rem;" >5% discount for Gujrati Thali</h4>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+  
+  <script>
+    // Function to close the popup
+    function closePopup() {
+        var popupContainer = document.getElementById('popupContainer');
+        popupContainer.style.display = 'none';
+    }
+
+// Display the popup when the page loads
+    window.onload = function() {
+        var popupContainer = document.getElementById('popupContainer');
+        popupContainer.style.display = 'flex';
+    }
+
+  </script>
+  </body>
+</html>
